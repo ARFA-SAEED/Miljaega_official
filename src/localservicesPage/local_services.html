@@ -762,15 +762,15 @@
 
 
 
-    <!-- Footer -->
-    <footer class="bg-[#0C3168] text-white">
+  <footer class="bg-[#0C3168] text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-            <!-- Mobile / Tablet -->
-            <div class="flex flex-wrap gap-8 lg:hidden">
-                <!-- ABOUT + ACCOUNT -->
-                <div class="w-full flex gap-8">
-                    <div class="w-1/2 text-left">
+            <!-- ✅ Mobile/Tablet (sm, md, lg): 2 Rows Layout -->
+            <div class="flex  flex-wrap gap-8 lg:hidden">
+                <!-- Row 1: ABOUT US + MY ACCOUNT -->
+                <div class="w-full flex   gap-8">
+                    <!-- ABOUT US -->
+                    <div class="w-full ms-10 md:ms-0 sm:w-1/2 text-left">
                         <ul class="leading-10">
                             <li class="font-bold text-xl mb-3">ABOUT US</li>
                             <li>FAQ</li>
@@ -781,7 +781,8 @@
                             <li>Sitemap</li>
                         </ul>
                     </div>
-                    <div class="w-1/2 text-left">
+                    <!-- MY ACCOUNT -->
+                    <div class="w-full ms-20 md:ms-60 sm:w-1/2 text-left">
                         <ul class="leading-10">
                             <li class="font-bold text-xl mb-3">MY ACCOUNT</li>
                             <li>Login</li>
@@ -790,9 +791,10 @@
                     </div>
                 </div>
 
-                <!-- Miljaega + Social -->
+                <!-- Row 2: Miljaega + Social -->
                 <div class="w-full flex gap-8 mt-5">
-                    <div class="w-1/2 text-left">
+                    <!-- Miljaega -->
+                    <div class="w-full sm:w-1/2 ms-10 md:ms-0 text-left">
                         <ul class="leading-10">
                             <li class="font-bold text-xl mb-3">Miljaega</li>
                             <li>Inspected by miljaega</li>
@@ -800,23 +802,25 @@
                             <li>Recomended by miljaega</li>
                         </ul>
                     </div>
-                    <div class="w-1/2 text-left">
+                    <!-- Social -->
+                    <div class="w-full ms-20 md:ms-60  sm:w-1/2 text-left leading-15">
                         <ul>
-                            <li class="font-bold text-xl mb-3">FOLLOW US</li>
+                            <li class="font-bold text-xl  mb-3">FOLLOW US</li>
                         </ul>
-                        <div class="flex mt-3 gap-5">
-                            <img src="../../../assets/images/fb.svg" class="h-10" alt="">
-                            <img src="../../../assets/images/insta.svg" class="h-10" alt="">
-                            <img src="../../../assets/images/twitter.svg" class="h-10" alt="">
-                            <img src="../../../assets/images/youtube.svg" class="h-10" alt="">
+                        <div class=" ms-8 md:ms-0 sm:flex-wrap md:flex mt-3 gap-5">
+                            <img src="../../assets/images/fb.svg" class="h-10" alt="">
+                            <img src="../../assets/images/insta.svg" class="h-10" alt="">
+                            <img src="../../assets/images/twitter.svg" class="h-10" alt="">
+                            <img src="../../assets/images/youtube.svg" class="h-10" alt="">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Desktop -->
-            <div class="hidden lg:flex lg:justify-between xl:gap-8">
-                <div>
+            <!-- ✅ XL and Up: Original 4-column Layout -->
+            <div class="hidden lg:block lg:flex lg:justify-between xl:gap-8">
+                <!-- ABOUT US -->
+                <div class="w-full sm:w-1/2 xl:w-auto mb-5 xl:mb-0  xl:text-left">
                     <ul class="leading-10">
                         <li class="font-bold text-xl mb-3">ABOUT US</li>
                         <li>FAQ</li>
@@ -827,14 +831,16 @@
                         <li>Sitemap</li>
                     </ul>
                 </div>
-                <div>
+                <!-- MY ACCOUNT -->
+                <div class="w-full sm:w-1/2 xl:w-auto text-left mb-5 xl:mb-0">
                     <ul class="leading-10">
                         <li class="font-bold text-xl mb-3">MY ACCOUNT</li>
                         <li>Login</li>
                         <li>Register</li>
                     </ul>
                 </div>
-                <div>
+                <!-- Miljaega -->
+                <div class="w-full sm:w-1/2 xl:w-auto mb-5 xl:mb-0 text-left">
                     <ul class="leading-10">
                         <li class="font-bold text-xl mb-3">Miljaega</li>
                         <li>Inspected by miljaega</li>
@@ -842,15 +848,16 @@
                         <li>Recomended by miljaega</li>
                     </ul>
                 </div>
-                <div>
+                <!-- Social -->
+                <div class="w-full sm:w-1/2 xl:w-auto text-left mb-5 xl:mb-0 leading-15">
                     <ul>
                         <li class="font-bold text-xl mb-3">FOLLOW US</li>
                     </ul>
-                    <div class="flex mt-3 gap-5">
-                        <img src="../../../assets/images/fb.svg" class="h-10" alt="">
-                        <img src="../../../assets/images/insta.svg" class="h-10" alt="">
-                        <img src="../../../assets/images/twitter.svg" class="h-10" alt="">
-                        <img src="../../../assets/images/youtube.svg" class="h-10" alt="">
+                    <div class="flex  ustify-start mt-3 gap-5">
+                        <img src="../../assets/images/fb.svg" class="h-10" alt="">
+                        <img src="../../assets/images/insta.svg" class="h-10" alt="">
+                        <img src="../../assets/images/twitter.svg" class="h-10" alt="">
+                        <img src="../../assets/images/youtube.svg" class="h-10" alt="">
                     </div>
                 </div>
             </div>
@@ -861,7 +868,6 @@
             </div>
         </div>
     </footer>
-
 
 
 
