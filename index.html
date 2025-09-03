@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Miljaega.pk - Local Classifieds and Services</title>
+    <title>Miljaega.pk - Homepage</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet" />
@@ -30,22 +30,19 @@
 </style>
 
 <body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-sm fixed top-0 z-50 w-full">
-        <div class=" lg:mx-auto 2xl:mx-20 relative py-3 container px-4 sm:px-6">
-            <div class="flex justify-between items-center py-3 ">
-                <!-- Left: Logo -->
+ <section><header class="bg-white shadow-sm fixed top-0 z-50 w-full">
+        <div class="lg:mx-auto 2xl:mx-20 container px-4 sm:px-6">
+            <div class="flex justify-between items-center py-3">
                 <div class="flex-shrink-0">
-                    <img src="../assets/images/logo.svg" alt="Logo" class="h-8 sm:h-10" />
-                    </a>
+                 <a href="./index.html"> <img src="../../assets/images/logo.svg" alt="Logo" class="h-8 sm:h-10" /></a>  
                 </div>
 
-                <!-- Center: Nav Bar (Visible only on XL and above) -->
-                <nav class="hidden xl:flex absolute ms-160  left-1/2 transform -translate-x-1/2 space-x-6 text-sm font-medium text-gray-600"
+                   <!-- Center: Nav Bar (Visible only on XL and above) -->
+                <nav class="hidden xl:flex absolute 2xl:ms-65 3xl:ms-[500px] left-1/2 transform -translate-x-1/2 space-x-6 text-sm font-medium text-gray-600"
                     style="max-width: 100%; overflow-x: auto; white-space: nowrap;">
                     <div class="flex justify-center mt-2">
                         <div class="inline-flex rounded-lg shadow-md bg-white overflow-hidden">
-                            <a href="#"
+                            <a href=""
                                 class="px-8 py-3 text-sm font-medium text-white bg-blue-900 hover:bg-blue-900 transition duration-300 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -55,7 +52,7 @@
                                 </svg>
                                 ALL
                             </a>
-                            <a href="#"
+                            <a href="./src/NewPage/New.html"
                                 class="px-8 py-3 text-sm font-medium text-pak-green hover:bg-[rgb(220,228,245)] transition duration-300 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -65,7 +62,7 @@
                                 </svg>
                                 NEW
                             </a>
-                            <a href="#"
+                            <a href="./src/UsedPage/Used.html"
                                 class="px-8 py-3 text-sm font-medium text-pak-green hover:bg-[rgb(220,228,245)] transition duration-300 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -75,7 +72,7 @@
                                 </svg>
                                 USED
                             </a>
-                            <a href="#"
+                            <a href="./src/RentPage/Rent.html"
                                 class="px-8 py-3 text-sm font-medium text-pak-green hover:bg-[rgb(220,228,245)] transition duration-300 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -85,7 +82,7 @@
                                 </svg>
                                 RENT
                             </a>
-                            <a href="#"
+                            <a href="./src/ExchangePage/Exchange.html"
                                 class="px-8 py-3 text-sm font-medium text-pak-green hover:bg-[rgb(220,228,245)] transition duration-300 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -97,24 +94,20 @@
                             </a>
                         </div>
                     </div>
+                </nav>
 
-                        <!-- Action Buttons -->
-                <div class="flex-shrink-0  flex items-center space-x-3">
+
+                <div class="hidden xl:flex space-x-3 me-40">
                     <button onclick="openModal()"
-                        class="h-9 border mt-4 ms-20 mb-2 border-[#0C3168] ps-3 pe-3 hover:bg-[rgb(220,228,245)] text-[#0C3168] text-sm font-semibold rounded-lg flex items-center justify-center">
+                        class="h-9 border border-[#0C3168] ps-3 pe-3 hover:bg-[rgb(220,228,245)] text-[#0C3168] text-sm font-semibold rounded-lg flex items-center justify-center">
                         Sell Your Service
                     </button>
                     <button onclick="openModal()"
-                        class="h-9 mt-4 mb-2 bg-[#0C3168] text-white text-sm font-semibold rounded-lg flex items-center justify-center hover:bg-opacity-90 px-4">
+                        class="h-9 bg-blue-900 hover:bg-blue-800 text-white text-sm font-semibold rounded-lg flex items-center justify-center hover:bg-opacity-90 px-4">
                         Post Free Adds
                     </button>
                 </div>
-                </nav>
-               </div>
 
-            
-
-                <!-- Right: Hamburger Menu (Visible on sm and md) -->
                 <button id="mobileMenuToggle"
                     class="block xl:hidden text-gray-700 hover:text-primary-green focus:outline-none"
                     aria-label="Toggle menu">
@@ -126,123 +119,53 @@
         </div>
     </header>
 
-    <!-- Mobile Menu Dropdown -->
-    <div id="mobileMenu"
-        class="xl:hidden hidden flex bg-white shadow-md fixed top-[72px] left-0 right-0 z-40 max-h-[calc(100vh-72px)] overflow-y-auto">
-        <div class="px-4 py-4 space-y-4 text-sm font-medium text-gray-700">
-            <!-- Center Nav Items -->
-            <div class="flex justify-around text-center gap-2 flex-wrap mt-">
-                <a href="#" class="flex flex-col items-center gap-1 hover:text-primary-green">
-                    <img src="./images/second-hand.png" alt="Used Items" class="w-6 h-6 object-contain" /> Used
-                </a>
-                <a href="#" class="flex flex-col items-center gap-1 hover:text-primary-green">
-                    <img src="./images/new.png" alt="New Items" class="w-6 h-6 object-contain" /> New
-                </a>
-                <a href="#" class="flex flex-col items-center gap-1 hover:text-primary-green">
-                    <img src="./images/exchange.png" alt="Exchange" class="w-6 h-6 object-contain" /> Exchange
-                </a>
-                <a href="#" class="flex flex-col items-center gap-1 hover:text-primary-green">
-                    <img src="./images/rent.png" alt="Rentals" class="w-6 h-6 object-contain" /> Rentals
-                </a>
-            </div>
+    <!-- Modal -->
+    <div id="loginModal" class="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white w-[345px] max-w-md mx-auto p-6 rounded-lg shadow-lg relative">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-blue-900 text-2xl hover:text-red-600 transition"
+                aria-label="Close">&times;</button>
 
-            <!-- Categories Row Items -->
-            <div class="space-y-2 pt-2 border-t border-gray-200">
-                <a href="#"
-                    class="block hover:text-primary-green pb-2 hover:ps-3 pt-3 hover:bg-[rgb(220,228,245)]">Trending
-                    🔥</a>
-                <a href="#"
-                    class="block hover:text-primary-green pb-2 hover:ps-3 pt-2 hover:bg-[rgb(220,228,245)]">Mobile
-                    Phones</a>
-                <a href="#"
-                    class="block hover:text-primary-green pb-2 hover:ps-3 pt-2 hover:bg-[rgb(220,228,245)]">Motorcycles</a>
-                <a href="#"
-                    class="block hover:text-primary-green pb-2 pt-2 hover:ps-3 hover:bg-[rgb(220,228,245)]">Electronics</a>
-                <a href="#"
-                    class="block hover:text-primary-green hover:ps-3 pb-2 pt-2 hover:bg-[rgb(220,228,245)]">Jobs</a>
-                <a href="#"
-                    class="block hover:text-primary-green hover:ps-3 pb-2 pt-2 hover:bg-[rgb(220,228,245)]">Furniture</a>
-                <a href="#"
-                    class="block hover:text-primary-green hover:ps-3 pb-2 pt-2 hover:bg-[rgb(220,228,245)]">Fashion</a>
-                <a href="#"
-                    class="block hover:text-primary-green pb-2 pt-2 hover:ps-3 hover:bg-[rgb(220,228,245)]">Services</a>
-            </div>
+        <div class="flex justify-center">  <img src="../assets/images/logo.svg" class="mb-8 h-12" alt=""></div> 
+            <h2 class="text-[18px] text-blue-900 font-bold ms-[10px] mb-[50px]">
+                Login to your Miljaega Account
+            </h2>
 
-            <!-- AlpineJS modal logic -->
-            <div x-data="{ openModal: false }">
-                <!-- Action Buttons -->
-                <div class="flex-shrink-0 ms-15 flex items-center space-x-3">
-                    <button @click="openModal = true"
-                        class="h-9 border mt-4 mb-2 border-blue-900 ps-3 pe-3 hover:bg-[rgb(220,228,245)] text-[#0C3168] text-sm font-semibold rounded-lg flex items-center justify-center">
-                        Sell Your Service
-                    </button>
-                    <button @click="openModal = true"
-                        class="h-9 mt-4 mb-2 bg-blue-900 text-white text-sm font-semibold rounded-lg flex items-center justify-center hover:bg-opacity-90 px-4">
-                        Post Free Adds
-                    </button>
-                </div>
+           <a href="./src/Other_pages/Email_login.html">    <label
+                class="flex items-center justify-center p-3 border-2 border-blue-900 rounded-full hover:bg-blue-50 mb-3 cursor-pointer w-[300px]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 mr-3" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+             <span class="text-blue-900 font-medium text-md ">Login with Email</span>
+            </label></a>
 
-                <!-- Modal -->
-                <div x-show="openModal" x-transition
-                    class="fixed inset-0 z-[9999] flex items-center mt-0 justify-center h-screen bg-black bg-opacity-50"
-                    @click.away="openModal = false">
-                    <div class="bg-white w-[345px] max-w-md mx-auto p-6 rounded-lg shadow-lg relative">
-                        <!-- Close Button -->
-                        <button class="absolute top-4 right-4 text-blue-900 text-2xl hover:text-red-600 transition"
-                            @click="openModal = false" aria-label="Close">
-                            &times;
-                        </button>
+                         <a href="./src/Other_pages/Phone_login.html"> <label
+                class="flex items-center justify-center p-3 border-2 border-blue-900 rounded-full mb-[50px] hover:bg-blue-50 w-[300px] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 mr-3" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+  <span class="text-blue-900 font-medium text-md ">Login with Phone</span>
+            </label></a>
 
-                        <!-- Modal Content -->
-                        <img src="../assets/images/logo.svg" class="ms-25 mb-5 mt-10" alt="Logo" />
-                        <h2 class="text-[18px] text-blue-900 font-bold ms-[10px] mb-[50px]">
-                            Login to your Miljaega Account
-                        </h2>
-
-                        <!-- email Login -->
-                        <label
-                            class="flex items-center p-3 border-2 border-blue-900 rounded-full hover:bg-blue-50 mb-3 cursor-pointer w-[300px]">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-900 mr-2" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                         <a href="./src/Other_pages/"> <span class="text-blue-900 font-medium">Login with Email</span></a> 
-                            </div>
-                        </label>
-
-                        <!-- Phone Login -->
-                        <label
-                            class="flex items-center space-x-3 p-3 border-2 border-blue-900 rounded-full mb-[50px] hover:bg-blue-50 w-[300px] cursor-pointer">
-                           <a href="../src/Other_pages/Email_login.html">   <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-900 mr-2" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                           <a href="./src/Other_pages/Phone_login.html">  <span class="text-blue-900 font-medium">Login with Phone</span></a> 
-                            </div></a>
-                        </label>
-
-                        <!-- Create Account -->
-                        <div class="ms-8 mb-7 text-[#EA9D39]">
-                            <p class="text--600">
-                                New Here?
-                                <a href="./src/Other_pages/create-account.html" class="text-blue-900 font-semibold hover:underline ml-1">Create an
-                                    Account</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex justify-center mb-7 text-[#EA9D39]">
+                 <p class=" text-md mt-4">
+            <span class="text-gray-600">New Here ?</span>
+            <a href="./src/Other_pages/create-account.html" class="text-orange-500 font-semibold hover:underline ml-1">Create a new Account</a>
+        </p>
             </div>
         </div>
     </div>
+    </div>
+</section>
 
     <!-- Spacer to avoid content under fixed header -->
     <div class="pt-[72px]"></div>
     <!-- Tailwind Only - No AlpineJS -->
-    <div class="bg-white shadow-sm fixed top-[72px] z-[100] w-full hidden xl:block translate-z-0">
+    <div class="bg-white shadow-sm fixed top-[62px] z-[100] w-full hidden xl:block translate-z-0">
         <div class="mx-2 2xl:mx-20 sm:px-6">
             <div class="flex">
 
@@ -498,7 +421,7 @@
             class="flex w-full items-center justify-between px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
             <img src="../assets/images/location.png" alt="" class="h-8 w-8 mr-2">
             <span id="selectedLocation" class="flex-1 text-left">Malir, Karachi</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6 text-blue-900" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.67l3.71-3.48a.75.75 0 111.04 1.08l-4.25 4a.75.75 0 01-1.04 0l-4.25-4a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
             </svg>
           </button>
@@ -531,8 +454,8 @@
         <div class="relative w-full flex-1">
           <div class="flex items-center bg-gray-100 border rounded-md overflow-hidden">
             <div class="flex items-center px-3 border-r border-gray-300">
-              <img src="../assets/images/ai search.png" class="h-3">
-              <span class="ml-2 text-[12px] sm:text-sm text-gray-700 ">Ask AI</span>
+              <img src="../assets/images/ai search.png" class=" me-3  h-3">
+              <span class=" text-[8px] md:text-[12px]  text-gray-700 me-3">Ask AI</span>
             </div>
             <input type="text" id="searchInput" placeholder="Samsung S24 Ultra..." class="flex-1 px-3 py-2 bg-gray-100  border-0 focus-within:border-0  text-sm">
             <img src="../assets/images/Microphone.png" class="h-5 mr-3" alt="">
@@ -647,13 +570,13 @@
 
     <!-- Avatars + Note -->
     <div class="mt-8 flex items-center">
-      <div class="flex -space-x-2">
+      <div class="flex -space-x-2 ms-4 md:ms-0">
         <img src="https://tse4.mm.bing.net/th/id/OIP.PsPvHQ9-mEMxt7Cp6VmFjwHaHa?pid=Api&P=0&h=220" class="w-10 h-10 rounded-full border-2 border-white">
         <img src="https://i.pinimg.com/originals/c1/e6/c9/c1e6c94f0d28fc78239a18a683fe96bf.jpg" class="w-10 h-10 rounded-full border-2 border-white">
         <img src="https://r2.erweima.ai/imgcompressed/img/compressed_730896b933097d0ca6c73ad3220672ce.webp" class="w-10 h-10 rounded-full border-2 border-white">
         <img src="https://www.thefamouspeople.com/profiles/thumbs/momal-sheikh.jpg" class="w-10 h-10 rounded-full border-2 border-white">
       </div>
-      <p class="ml-4 text-white text-sm md:text-base">
+      <p class="ml-20 md:ml-4 text-white text-sm md:text-base">
         <span class="font-bold">10,000+</span> professionals are ready to help
       </p>
     </div>
@@ -664,51 +587,51 @@
 
     <!-- Banner Section -->
     <section class="mb-5 pt-4 ">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="grid grid-cols ms-5 md:ms-0 md:grid-cols-2 lg:grid-cols-5 gap-6">
             <!-- Card -->
           <a href="./src/localservicesPage/local_services.html"> <div class="flex flex-col items-center text-center mt-1">
                 <img src="../assets/images/local_service-removebg-preview.png"
                     class=" cursor-pointer [170px] h-[170px] object-contain rounded-md" alt="" />
-                <h3 class=" cursor-pointer text-2xl font-bold drop-shadow-md  text-center">Local Services</h3>
+                <h3 class=" cursor-pointer text-xl md:text-2xl font-bold drop-shadow-md  text-center">Local Services</h3>
             </div></a> 
 
             <!-- Card -->
         <a href="./src/classifiedadsPage/Classied_ads.html">  <div class="flex flex-col items-center text-center">
                 <img src="../assets/images/sCtuqb-removebg-preview.png"
                     class="cursor-pointer w-[170px] h-[170px] object-contain rounded-md" alt="" />
-                <h3 class="cursor-pointer text-2xl font-bold drop-shadow-md mt-2 text-center">Classified Ads</h3>
+                <h3 class="cursor-pointer text-xl md:text-2xl font-bold drop-shadow-md mt-2 text-center">Classified Ads</h3>
             </div></a>  
 
             <!-- Card -->
          <a href="./src/motorsPage/Motors.html">   <div class="flex flex-col items-center text-center">
                 <img src="../assets/images/motorss.png" class="cursor-pointer w-[170px] h-[170px] object-contain rounded-md"
                     alt="" />
-                <h3 class="cursor-pointer text-2xl font-bold drop-shadow-md mt-2 text-center">Motors</h3>
+                <h3 class="cursor-pointer text-xl md:text-2xl font-bold drop-shadow-md mt-2 text-center">Motors</h3>
             </div></a>
 
             <!-- Card -->
         <a href="./src/freelancersPage/freelancers.html">   <div class="flex flex-col items-center text-center">
                 <img src="../assets/images/freelancerr.png"
                     class=" cursor-pointer w-[170px] h-[170px] object-contain rounded-md" alt="" />
-                <h3 class=" cursor-pointer text-2xl font-bold drop-shadow-md mt-2 text-center">Freelancers</h3>
+                <h3 class=" cursor-pointer text-xl md:text-2xl font-bold drop-shadow-md mt-2 text-center">Freelancers</h3>
             </div></a> 
 
             <!-- Card -->
           <a href="./src/propertiesPage/Properties.html"> <div class="flex flex-col items-center text-center">
                 <img src="../assets/images/pro.png" class=" cursor-pointer w-[170px] h-[170px] object-contain rounded-md"
                     alt="" />
-                <h3 class=" cursor-pointer text-2xl font-bold drop-shadow-md mt-2 text-center">Properties</h3>
+                <h3 class=" cursor-pointer text-xl md:text-2xl font-bold drop-shadow-md mt-2 text-center">Properties</h3>
             </div></a> 
         </div>
     </section>
 
-      <div class="flex items-center justify-start ms-5 3xl:ms-10 mt-8 gap-1 steps-container overflow-x-auto px-2">
-        <div class="step step-active">ALL</div>
-        <div class="step">NEW</div>
-        <div class="step">USED</div>
-        <div class="step">RENT</div>
-        <div class="step">EXCHANGE</div>
-    </div>
+     <div class="steps-container flex items-center justify-start 3xl:ms-10 mt-8 gap-1 ms-3">
+  <div class="step step-active">ALL</div>
+  <div class="step">NEW</div>
+  <div class="step">USED</div>
+  <div class="step">RENT</div>
+  <div class="step">EXCHANGE</div>
+</div>
 
     <main class="mx-4 sm:mx-6 3xl:mx-24 relative py-3">
 
@@ -716,10 +639,10 @@
         <section class="mb-4">
             <div class="py-3">
                 <div class="flex justify-between items-center mb-6 px-2 sm:px-0">
-                    <h2 class="text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
+                    <h2 class="sm:text-xl md:text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
                         Local Services
                     </h2>
-                    <a href="./src/localservicesPage/local_services.html" class="text-blue-900 font-bold whitespace-nowrap">View More</a>
+                    <a href="./src/localservicesPage/local_services.html" class="text-blue-900 text-md md:text-xl font-bold whitespace-nowrap">View More</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="mycardslocal"></div>
             </div>
@@ -728,11 +651,11 @@
         <!-- Classified Ads Section -->
         <section class="mb-7">
             <div class="py-3">
-                <div class="flex justify-between items-center mb-6 px-2 sm:px-0">
-                    <h2 class="text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
+                <div class="flex  justify-between items-center mb-6 px-2 sm:px-0">
+                    <h2 class="sm:text-xl md:text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
                         Classified Ads
                     </h2>
-                    <a href="./src/classifiedadsPage/Classied_ads.html" class="text-blue-900 font-bold whitespace-nowrap">View More</a>
+                    <a href="./src/classifiedadsPage/Classied_ads.html" class="text-blue-900   text-md md:text-xl font-bold whitespace-nowrap">View More</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="mycardsclassified"></div>
             </div>
@@ -741,11 +664,11 @@
         <!-- Motors Section -->
         <section>
             <div class="py-1 relative px-2 sm:px-0">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
+                <div class="flex justify-between  items-center mb-6">
+                    <h2 class="sm:text-xl md:text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
                         Motors
                     </h2>
-                    <a href="./src/motorsPage/Motors.html" class="text-blue-900 font-bold whitespace-nowrap">View More</a>
+                    <a href="./src/motorsPage/Motors.html" class="text-blue-900 font-bold  text-md md:text-xl whitespace-nowrap">View More</a>
                 </div>
                 <div class="flex flex-wrap gap-8 sm:gap-12 lg:gap-[120px] lg:px-8 3xl:px-0 mt-8" id="mycardsmotors"
                     style="/* optional max-width for better wrapping on lg/xl if needed */"></div>
@@ -755,11 +678,11 @@
         <!-- Freelancers Section -->
         <section class="mb-3">
             <div class="py-3 relative mt-4 px-2 sm:px-0">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
+                <div class="flex justify-between items-center  mb-6">
+                    <h2 class="sm:text-xl md:text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
                         Freelancers
                     </h2>
-                    <a href="./src/freelancersPage/freelancers.html" class="text-blue-900 font-bold whitespace-nowrap">View More</a>
+                    <a href="./src/freelancersPage/freelancers.html" class="text-blue-900  text-md md:text-xl font-bold whitespace-nowrap">View More</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full" id="mycardsfreelancers"></div>
             </div>
@@ -768,10 +691,10 @@
         <section class="mb-7">
             <div class="py-3 relative px-2 sm:px-0">
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
+                    <h2 class="text-xl md:text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
                         Properties
                     </h2>
-                    <a href="./src/propertiesPage/Properties.html" class="text-blue-900 font-bold whitespace-nowrap hover:underline">View More</a>
+                    <a href="./src/propertiesPage/Properties.html" class="text-blue-900 font-bold  text-md md:text-xl whitespace-nowrap hover:underline">View More</a>
                 </div>
 
                 <!-- Responsive flex container -->
@@ -784,11 +707,11 @@
         <!-- Blogs Section -->
         <section class="mb-16">
             <div class="py-3 relative px-2 sm:px-0">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
+                <div class="flex justify-between  items-center mb-6">
+                    <h2 class="text-xl md:text-3xl font-bold text-[#0C3168]" style="font-family: 'Poppins', sans-serif;">
                         Blogs
                     </h2>
-                    <a href="./src/Blogs/Blogs.html" class="text-blue-900 font-bold whitespace-nowrap">View More</a>
+                    <a href="./src/Blogs/Blogs.html" class="text-blue-900 font-bold  text-md md:text-xl whitespace-nowrap">View More</a>
                 </div>
                 <div id="mycardsblogs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full"></div>
             </div>
@@ -798,8 +721,8 @@
 
 
     <!-- Full-width, fully centered content on all screens -->
-    <div class="w-full bg-white py-12 px-4 sm:px-6">
-        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20">
+    <div class="w-full bg-white py-12 px-4 sm:px-20">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-[260px]">
 
             <!-- Left Content -->
             <div class="text-center md:text-left flex-1">
@@ -874,112 +797,202 @@
         alert("Geolocation is not supported by your browser.");
     }
 });</script>
-    <footer class="bg-[#0C3168] text-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-            <!-- ✅ Mobile/Tablet (sm, md, lg): 2 Rows Layout -->
-            <div class="flex  flex-wrap gap-8 lg:hidden">
-                <!-- Row 1: ABOUT US + MY ACCOUNT -->
-                <div class="w-full flex   gap-8">
-                    <!-- ABOUT US -->
-                    <div class="w-full ms-10 md:ms-0 sm:w-1/2 text-left">
-                        <ul class="leading-10">
-                            <li class="font-bold text-xl mb-3">ABOUT US</li>
-                            <li>FAQ</li>
-                            <li>Anti Scam</li>
-                            <li>Term of use</li>
-                            <li>Privacy Policy</li>
-                            <li>Contact Us</li>
-                            <li>Sitemap</li>
-                        </ul>
-                    </div>
-                    <!-- MY ACCOUNT -->
-                    <div class="w-full ms-20 md:ms-60 sm:w-1/2 text-left">
-                        <ul class="leading-10">
-                            <li class="font-bold text-xl mb-3">MY ACCOUNT</li>
-                            <li>Login</li>
-                            <li>Register</li>
-                        </ul>
-                    </div>
-                </div>
+<footer class="pt-10 pb-8 px-5 bg-blue-900 text-white">
+  <div class="flex flex-col gap-10">
+    <!-- Top row -->
+    <div class="flex flex-wrap gap-8 justify-between">
+      <!-- 1 Cars By Make -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-400">Cars By Make</h4>
+        <ul class="text-sm text-white space-y-2">
+          <li><a href="#" >Toyota Cars for Sale</a></li>
+          <li><a href="#" >Suzuki Cars for Sale</a></li>
+          <li><a href="#" >Honda Cars for Sale</a></li>
+          <li><a href="#" >Daihatsu Cars for Sale</a></li>
+          <li><a href="#" >Mitsubishi Cars for Sale</a></li>
+          <li><a href="#" >Nissan Cars for Sale</a></li>
+          <li><a href="#" >Mercedes Cars for Sale</a></li>
+          <li><a href="#" >Hyundai Cars for Sale</a></li>
+          <li><a href="#" >BMW Cars for Sale</a></li>
+        </ul>
+      </div>
 
-                <!-- Row 2: Miljaega + Social -->
-                <div class="w-full flex gap-8 mt-5">
-                    <!-- Miljaega -->
-                    <div class="w-full sm:w-1/2 ms-10 md:ms-0 text-left">
-                        <ul class="leading-10">
-                            <li class="font-bold text-xl mb-3">Miljaega</li>
-                            <li>Inspected by miljaega</li>
-                            <li>Featured by miljaega</li>
-                            <li>Recomended by miljaega</li>
-                        </ul>
-                    </div>
-                    <!-- Social -->
-                    <div class="w-full ms-20 md:ms-60  sm:w-1/2 text-left leading-15">
-                        <ul>
-                            <li class="font-bold text-xl  mb-3">FOLLOW US</li>
-                        </ul>
-                        <div class=" ms-8 md:ms-0 sm:flex-wrap md:flex mt-3 gap-5">
-                            <img src="../../assets/images/fb.svg" class="h-10" alt="">
-                            <img src="../../assets/images/insta.svg" class="h-10" alt="">
-                            <img src="../../assets/images/twitter.svg" class="h-10" alt="">
-                            <img src="../../assets/images/youtube.svg" class="h-10" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- 2 Cars By City -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-400">Cars By City</h4>
+        <ul class="space-y-2 text-sm  text-white">
+          <li><a href="#" >Cars in Lahore</a></li>
+          <li><a href="#" >Cars in Karachi</a></li>
+          <li><a href="#" >Cars in Islamabad</a></li>
+          <li><a href="#" >Cars in Rawalpindi</a></li>
+          <li><a href="#" >Cars in Peshawar</a></li>
+          <li><a href="#" >Cars in Faisalabad</a></li>
+          <li><a href="#" >Cars in Multan</a></li>
+          <li><a href="#" >Cars in Gujranwala</a></li>
+          <li><a href="#" >Cars in Sialkot</a></li>
+        </ul>
+      </div>
 
-            <!-- ✅ XL and Up: Original 4-column Layout -->
-            <div class="hidden lg:block lg:flex lg:justify-between xl:gap-8">
-                <!-- ABOUT US -->
-                <div class="w-full sm:w-1/2 xl:w-auto mb-5 xl:mb-0  xl:text-left">
-                    <ul class="leading-10">
-                        <li class="font-bold text-xl mb-3">ABOUT US</li>
-                        <li>FAQ</li>
-                        <li>Anti Scam</li>
-                        <li>Term of use</li>
-                        <li>Privacy Policy</li>
-                        <li>Contact Us</li>
-                        <li>Sitemap</li>
-                    </ul>
-                </div>
-                <!-- MY ACCOUNT -->
-                <div class="w-full sm:w-1/2 xl:w-auto text-left mb-5 xl:mb-0">
-                    <ul class="leading-10">
-                        <li class="font-bold text-xl mb-3">MY ACCOUNT</li>
-                        <li>Login</li>
-                        <li>Register</li>
-                    </ul>
-                </div>
-                <!-- Miljaega -->
-                <div class="w-full sm:w-1/2 xl:w-auto mb-5 xl:mb-0 text-left">
-                    <ul class="leading-10">
-                        <li class="font-bold text-xl mb-3">Miljaega</li>
-                        <li>Inspected by miljaega</li>
-                        <li>Featured by miljaega</li>
-                        <li>Recomended by miljaega</li>
-                    </ul>
-                </div>
-                <!-- Social -->
-                <div class="w-full sm:w-1/2 xl:w-auto text-left mb-5 xl:mb-0 leading-15">
-                    <ul>
-                        <li class="font-bold text-xl mb-3">FOLLOW US</li>
-                    </ul>
-                    <div class="flex  sm:flex-wrap justify-start mt-3 gap-5">
-                        <img src="../../assets/images/fb.svg" class="h-10" alt="">
-                        <img src="../../assets/images/insta.svg" class="h-10" alt="">
-                        <img src="../../assets/images/twitter.svg" class="h-10" alt="">
-                        <img src="../../assets/images/youtube.svg" class="h-10" alt="">
-                    </div>
-                </div>
-            </div>
+      <!-- 3 Explore PakWheels -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-400">Explore PakWheels</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >Used Cars</a></li>
+          <li><a href="#" >Used Bikes</a></li>
+          <li><a href="#" >New Cars</a></li>
+          <li><a href="#" >Auto Parts & Accessories</a></li>
+          <li><a href="#" >Cool Rides</a></li>
+          <li><a href="#" >Forums</a></li>
+          <li><a href="#" >Autoshow</a></li>
+          <li><a href="#" >Sitemap</a></li>
+        </ul>
+      </div>
 
-            <!-- Footer bottom -->
-            <div class="text-center border-t-2 border-white mt-10 pt-5 text-sm">
+      <!-- 4 PakWheels.com -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-400">PakWheels.com</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >About PakWheels.com</a></li>
+          <li><a href="#" >Our Products</a></li>
+          <li><a href="#" >Advertise With Us</a></li>
+          <li><a href="#" >How To Pay</a></li>
+          <li><a href="#" >FAQs</a></li>
+          <li><a href="#" >Refunds & Returns</a></li>
+          <li><a href="#" >Careers</a></li>
+          <li><a href="#" >Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- 5 Sell On PakWheels -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-400">Sell On PakWheels</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >Sell Your Car</a></li>
+          <li><a href="#" >Sell Your Bike</a></li>
+          <li><a href="#" >Sell Accessory</a></li>
+        </ul>
+        <p class="font-semibold mb-2 mt-12 text-orange-500">Subscribe to our <span class="font-bold text-orange-500">Newsletter</span></p>
+        <form class="flex mb-6">
+          <input
+            type="email"
+            placeholder="name@email.com"
+            required
+            class="flex-grow w-[100px] rounded-l px-3 py-2 text-gray-800"
+          />
+          <button
+            type="submit"
+            class="bg-orange-500 hover:bg-orange-400 text-white font-semibold px-4 rounded-r"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="flex flex-wrap gap-8 justify-between pb-8  border-b border-white">
+      <!-- 6 Cars by Category -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-500">Cars by Category</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >Jeep</a></li>
+          <li><a href="#" >Japanese Cars</a></li>
+          <li><a href="#" >Imported Cars</a></li>
+          <li><a href="#" >Automatic Cars</a></li>
+          <li><a href="#" >Low Priced Cars</a></li>
+          <li><a href="#" >4x4 Cars</a></li>
+          <li><a href="#" >660cc Cars</a></li>
+          <li><a href="#" >1000cc Cars</a></li>
+        </ul>
+      </div>
+
+      <!-- 7 Cars by Body Type -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-500">Cars by Body Type</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >Crossover</a></li>
+          <li><a href="#" >Hatchback</a></li>
+          <li><a href="#" >Micro Van</a></li>
+          <li><a href="#" >Mini Van</a></li>
+          <li><a href="#" >Pick Up</a></li>
+          <li><a href="#" >Sedan</a></li>
+          <li><a href="#" >SUV</a></li>
+          <li><a href="#" >Van</a></li>
+        </ul>
+      </div>
+
+      <!-- 8 Cars by Color -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-500">Cars by Color</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >Black Cars</a></li>
+          <li><a href="#" >Blue Cars</a></li>
+          <li><a href="#" >Gold Cars</a></li>
+          <li><a href="#" >Green Cars</a></li>
+          <li><a href="#" >Grey Cars</a></li>
+          <li><a href="#" >Red Cars</a></li>
+          <li><a href="#" >Silver Cars</a></li>
+          <li><a href="#" >White Cars</a></li>
+        </ul>
+      </div>
+
+      <!-- 9 Cars by Province -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <h4 class="font-semibold mb-4 text-orange-500">Cars by Province</h4>
+        <ul class="space-y-2 text-sm text-white">
+          <li><a href="#" >Cars in Punjab</a></li>
+          <li><a href="#" >Cars in Sindh</a></li>
+          <li><a href="#" >Cars in KPK</a></li>
+          <li><a href="#" >Cars in Azad Kashmir</a></li>
+          <li><a href="#" >Cars in Balochistan</a></li>
+          <li><a href="#" >Cars in Federally Administered Tribal Areas</a></li>
+        </ul>
+      </div>
+
+      <!-- 10 Subscribe Section -->
+      <div class="min-w-[160px] flex-1 max-w-xs">
+        <p class="font-semibold mb-3 text-orange-500">Follow Us</p>
+        <div class="flex space-x-4 mb-6 text-white">
+          <a href="#" aria-label="Facebook" >
+            <img src="../../../assets/images/fb.svg" class="h-10" alt="" />
+          </a>
+          <a href="#" aria-label="Instagram" >
+            <img src="../../../assets/images/insta.svg" class="h-10" alt="" />
+          </a>
+          <a href="#" aria-label="Twitter" >
+            <img src="../../../assets/images/twitter.svg" class="h-10" alt="" />
+          </a>
+          <a href="#" aria-label="Youtube" >
+            <img src="../../../assets/images/youtube.svg" class="h-10" alt="" />
+          </a>
+        </div>
+        <p class="font-semibold mb-2 mt-12  text-orange-500">Download Mobile Apps</p>
+        <div class="flex gap-1 flex-wrap ">
+          <a href="#" class="block">
+            <img
+              src="./assets/images/google-play-badge.svg"
+              alt="Google Play"
+              class="h-12"
+            />
+          </a>
+          <a href="#" class="block">
+            <img
+              src="./assets/images/app-store-badge.svg"
+              alt="App Store"
+              class="h-12"
+            />
+          </a>
+        </div>
+      </div>  
+    </div>
+     <!-- Footer bottom -->
+            <div class="text-center text-sm">
                 <p>© Copyright 2025 Miljaega <br>Powered by The Tech Creators</p>
             </div>
-        </div>
-    </footer>
+  </div>
+</footer>
+
 
 
 

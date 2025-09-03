@@ -26,7 +26,7 @@ fetch("http://127.0.0.1:5501/assets/json/miljaega-Blogs.json")
           <p class="text-sm text-gray-600 mb-4">
             ${blog.excerpt}
           </p>
-          <a href="../../src/Blogs/Blogs.html" class="text-blue-900 ms-32 md:ms-[180px] xl:ms-[210px] text-sm font-semibold hover:underline">Read More →</a>
+          <a href="../../src/Blogs/Blogs.html" class="text-blue-900   xl:ms-[130px] text-sm font-semibold hover:underline">Read More →</a>
 
         </div>
       `;

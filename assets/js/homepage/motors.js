@@ -131,9 +131,12 @@ fetch("http://127.0.0.1:5501/assets/json/miljaega-motors.json")
                 <span class="font-bold text-blue-900 text-lg whitespace-nowrap truncate max-w-[180px] sm:max-w-none">
                   ${car.Price}
                 </span>
-              <a href = "../../../src/localservicesPage/local_Show_Phone.html">  <button class="w-full sm:w-auto flex-shrink-0 bg-blue-900 text-white px-4 py-2.5 rounded-lg text-sm hover:bg-blue-800 transition-all duration-200 shadow-md whitespace-nowrap">
-                  <i class="fa-solid fa-phone me-2"></i> ${car.Phone}
-                </button></a>
+           <a href="../../../src/localservicesPage/local_Show_Phone.html" class="block w-full">
+  <button class="w-full flex items-center justify-center bg-blue-900 text-white px-4 py-2.5 rounded-lg text-sm hover:bg-blue-800 transition-all duration-200 shadow-md">
+    <i class="fa-solid fa-phone me-2"></i> ${car.Phone}
+  </button>
+</a>
+
               </div>
             </div>
           </div>

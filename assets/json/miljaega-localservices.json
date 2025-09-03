@@ -108,7 +108,13 @@
     "badge": { "level": "Level 2", "icon": "./images/tick.svg" },
     "labels": ["Verified", "Trusted"],
     "labelIcons": ["./images/verified.svg", "./images/trusted.svg"],
-    "services": ["AC Repair", "Gas Filling", "Installation", "Maintenance"],
+    "services": [
+      "AC Repair",
+      "Gas Filling",
+      "Installation",
+      "Maintenance",
+      "fitting"
+    ],
     "orders": 289,
     "rating": 5.0,
     "stars": 5,
@@ -121,7 +127,13 @@
     "badge": { "level": "Level 1", "icon": "./images/tick.svg" },
     "labels": ["Verified", "Trusted"],
     "labelIcons": ["./images/trusted.svg"],
-    "services": ["Personal Driver", "Office Driver", "Outstation", "AC Repair"],
+    "services": [
+      "Personal Driver",
+      "Office Driver",
+      "Outstation",
+      "Oncall",
+      "Boookings"
+    ],
     "orders": 87,
     "rating": 4.3,
     "stars": 4,
@@ -134,7 +146,13 @@
     "badge": { "level": "Level 3", "icon": "./images/tick.svg" },
     "labels": ["Verified", "Trusted"],
     "labelIcons": ["./images/verified.svg"],
-    "services": ["Home Cleaning", "ance", "Office Cleaning", "Deep Cleaning"],
+    "services": [
+      "Home Cleaning",
+      "ance",
+      "Office Cleaning",
+      "Deep Cleaning",
+      "Alterations"
+    ],
     "orders": 312,
     "rating": 4.9,
     "stars": 5,
@@ -225,12 +243,7 @@
     "badge": { "level": "Level 2", "icon": "./images/tick.svg" },
     "labels": ["Verified", "Trusted"],
     "labelIcons": ["./images/verified.svg"],
-    "services": [
-      "Interior Painting",
-      "Exterior Painting",
-      "Desigining",
-      "Wood Polishing"
-    ],
+    "services": ["Interior Painting", "Exterior Painting", "Desigining"],
     "orders": 132,
     "rating": 4.7,
     "stars": 4,

@@ -8,7 +8,7 @@ fetch("http://127.0.0.1:5501/assets/json/miljaega-properties.json")
     properties.slice(0, 2).forEach((p) => {
       container.innerHTML += `
         <div class="w-full lg:w-[45%]">
-          <div class="bg-white rounded-lg  h-[300px] shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-[1.02] flex flex-col md:flex-row">
+          <div class="bg-white rounded-lg   h-[500px] md:h-[300px] shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-[1.02] flex flex-col md:flex-row">
             <!-- Image Section -->
             <div class="relative w-full md:w-[280px] h-[200px] md:h-auto flex-shrink-0">
               <img src="${p.image}" alt="Property Image" class="w-full h-full object-cover">
@@ -56,7 +56,7 @@ fetch("http://127.0.0.1:5501/assets/json/miljaega-properties.json")
                 <span class="text-xs text-gray-500">Added: ${p.added}</span>
               </div>
                  
-                 <a href = "../../../src/localservicesPage/local_Show_Phone.html"> <button class="bg-blue-900  mb-1 justify-center hover:bg-blue-800 items-center flex text-white py-2.5 rounded-lg px-4 text-[13px] w-full font-medium leading-[20px]">
+                 <a href = "../../../src/localservicesPage/local_Show_Phone.html"> <button class="bg-blue-900 mt-1  mb-2 justify-center hover:bg-blue-800 items-center flex text-white py-2.5 rounded-lg px-4 text-[13px] w-full font-medium leading-[20px]">
                     <i class="fa-solid fa-phone text-white me-1 "></i> Show Phone Number
                   </button></a>
             </div>
